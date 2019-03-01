@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string-array name="spinner_cities_array">
+        <item>City</item>
+        <item>Punjab</item>
+        <item>Gurdaspur</item>
+        <item>Pathankot</item>
+        <item>Jammu</item>
+        <item>Kamshmir</item>
+        <item>U.P.</item>
+        <item>Bihar</item>
+    </string-array>
+    <string-array name="spinner_vehicle_Type">
+        <item>Vehicle Type</item>
+        <item>Car</item>
+        <item>Truck</item>
+        <item>Jeep</item>
+        <item>Picker</item>
+
+    </string-array>
+
+    <string-array name="spinner_vehicle_Brand">
+        <item>Vehicle Brand</item>
+        <item>Honda</item>
+        <item>Mahindra</item>
+        <item>Bajaj</item>
+
+    </string-array>
+
+    <string-array name="spinner_vehicle_year">
+        <item>Vehicle Making Year</item>
+        <item>2002</item>
+        <item>2003</item>
+        <item>2004</item>
+        <item>2005</item>
+        <item>2006</item>
+        <item>2007</item>
+        <item>2008</item>
+        <item>2009</item>
+        <item>2010</item>
+        <item>2011</item>
+        <item>2012</item>
+        <item>2013</item>
+        <item>2014</item>
+        <item>2015</item>
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+
+    </string-array>
+
+    <string-array name="spinner_select_vehicle_Brand">
+        <item>Vehicle Brand</item>
+        <item>Honda</item>
+        <item>Mahindra</item>
+        <item>Bajaj</item>
+
+    </string-array>
+
+
+    <string-array name="spinner_vehicle_color">
+        <item>Vehicle Color</item>
+        <item>Black</item>
+        <item>White</item>
+        <item>Red</item>
+        <item>Green</item>
+
+    </string-array>
+</resources>

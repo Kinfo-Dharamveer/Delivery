@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+            android:text="Your destination is 10 minutes away"
+            android:layout_width="0dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@android:color/white"
+            android:background="@color/grey_500"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_timeduration"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"/>
+    <TextView
+            android:text="5.5 km"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:paddingEnd="8dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_distance"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/text_timeduration"/>
+    <ImageView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            app:srcCompat="@drawable/profile_img"
+            android:id="@+id/imageView8"
+            app:layout_constraintStart_toStartOf="@+id/guideline17"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="@+id/guideline18"/>
+    <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guideline17"
+            app:layout_constraintGuide_begin="16dp"
+            android:orientation="vertical"/>
+    <TextView
+            android:text="Jammel Deere"
+            android:textColor="@android:color/black"
+            android:layout_width="0dp"
+            android:layout_height="19dp"
+            android:id="@+id/text_user_name"
+            app:layout_constraintStart_toEndOf="@+id/imageView8"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/text_location"
+            app:layout_constraintVertical_chainStyle="packed"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline18" android:layout_marginTop="8dp"/>
+    <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guideline18"
+            app:layout_constraintGuide_begin="16dp"
+            android:orientation="horizontal"/>
+    <TextView
+            android:text="2323 Cook Hill Road"
+            android:drawableStart="@drawable/location_pin_small"
+            android:drawablePadding="@dimen/dimen_8_dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_location"
+            app:layout_constraintStart_toEndOf="@+id/imageView8"
+            android:layout_marginStart="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/text_user_name"
+            app:layout_constraintBottom_toTopOf="@+id/text_time"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"/>
+    <TextView
+            android:text="10:30 PM"
+            android:drawableStart="@drawable/clock"
+            android:drawablePadding="@dimen/dimen_8_dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_time"
+            app:layout_constraintStart_toEndOf="@+id/imageView8"
+            android:layout_marginStart="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/text_location"
+            android:layout_marginTop="8dp"/>
+    <TextView
+            android:text="Online"
+            android:drawableStart="@drawable/status_tick"
+            android:drawablePadding="@dimen/dimen_8_dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_status"
+            app:layout_constraintStart_toEndOf="@+id/text_time"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/text_time"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/share_image"/>
+    <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            app:srcCompat="@drawable/share"
+            android:id="@+id/share_image"
+            android:onClick="share"
+            android:paddingRight="@dimen/dimen_8_dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="@+id/guideline18"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/text_time"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/star"
+            android:id="@+id/imageView10"
+            app:layout_constraintStart_toStartOf="@+id/guideline17"
+            android:layout_marginStart="8dp"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/imageView8"/>
+    <TextView
+            android:text="4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView68"
+            app:layout_constraintTop_toTopOf="@+id/imageView10"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView10" app:layout_constraintVertical_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView10" android:layout_marginStart="8dp"/>
+
+
+    <TextView
+            android:text="Show Details"
+            android:textColor="#1270E8"
+            android:textSize="@dimen/text_14_size"
+            android:layout_width="wrap_content"
+            android:onClick="showDetail"
+            android:layout_height="wrap_content"
+            android:id="@+id/show_details"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/imageView10"/>
+    <!--  <Space
+              android:layout_width="4dp"
+              android:layout_height="wrap_content"
+              android:id="@+id/space2"
+              tools:layout_editor_absoluteY="175dp" tools:layout_editor_absoluteX="271dp"/>-->
+    <include android:layout_width="0dp" android:layout_height="wrap_content"
+             layout="@layout/detail_show_layout"
+             app:layout_constraintEnd_toEndOf="parent"
+             android:id="@+id/detail_text_view"
+             android:layout_marginEnd="16dp"
+             android:visibility="gone"
+             tools:visibility="visible"
+             app:layout_constraintStart_toStartOf="@+id/guideline17" app:layout_constraintHorizontal_bias="0.0"
+             android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/show_details"
+    />
+
+
+    <Button
+            android:text="@string/btn_contact_customer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/contact_customer_btn"
+            android:background="@color/navy_blue"
+            android:onClick="contactCustomer"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toStartOf="@+id/btn_send_message"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/detail_text_view"/>
+    <Button
+            android:text="@string/btn_send_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:id="@+id/btn_send_message"
+            android:onClick="sendMessage"
+            android:textAllCaps="false"
+            android:background="@color/colorPrimary"
+            app:layout_constraintStart_toEndOf="@+id/contact_customer_btn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBaseline_toBaselineOf="@+id/contact_customer_btn"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

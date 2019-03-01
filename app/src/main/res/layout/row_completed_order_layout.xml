@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="@dimen/dimen_10dp"
+        android:id="@+id/cardView_item_layout"
+        android:background="@drawable/curved_rectangle_white"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="6dp">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:padding="@dimen/dimen_8_dp"
+            android:orientation="horizontal">
+        <ImageView android:layout_width="@dimen/user_image"
+                   android:src="@drawable/profile_img"
+                   android:id="@+id/user_image"
+                   android:layout_height="@dimen/user_image"/>
+
+        <ImageView android:layout_width="@dimen/star_dimen"
+                   android:src="@drawable/star"
+                   android:id="@+id/star_image"
+                   android:layout_marginBottom="@dimen/dimen_12_dp"
+                   android:layout_alignParentBottom="true"
+                   android:layout_alignBottom="@+id/user_image"
+                   android:layout_marginLeft="@dimen/dimen_12_dp"
+                   android:layout_height="@dimen/star_dimen"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_alignBottom="@+id/user_image"
+                  android:layout_toRightOf="@+id/star_image"
+                  android:layout_alignParentBottom="true"
+                  android:layout_marginBottom="@dimen/dimen_12_dp"
+                  android:text="4" android:layout_height="wrap_content"/>
+        <TextView android:layout_width="wrap_content"
+                  android:text="#86956500569"
+                  android:id="@+id/user_name"
+                  android:layout_toRightOf="@+id/user_image"
+                  android:layout_marginLeft="@dimen/dimen_12_dp"
+                  android:layout_marginBottom="@dimen/dimen_12_dp"
+                  android:textSize="@dimen/text_18_size"
+                  android:textColor="@android:color/black"
+                  android:layout_height="wrap_content"/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_toRightOf="@+id/user_image"
+                  android:layout_marginTop="@dimen/text_24_size"
+                  android:drawablePadding="@dimen/dimen_8_dp"
+                  android:id="@+id/address_text"
+                  android:layout_marginBottom="@dimen/dimen_12_dp"
+                  android:drawableLeft="@drawable/location_pin"
+                  android:text="sector 32 A chandigerh "
+                  android:layout_marginLeft="@dimen/dimen_12_dp"
+                  android:textSize="@dimen/sp_15"
+                  android:textColor="@android:color/black"
+                  android:layout_height="wrap_content"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_toRightOf="@+id/user_image"
+                  android:layout_marginTop="48dp"
+                  android:id="@+id/time_text"
+                  android:drawablePadding="@dimen/dimen_8_dp"
+                  android:drawableLeft="@drawable/clock"
+                  android:text="10:30 PM"
+                  android:layout_marginLeft="@dimen/dimen_12_dp"
+                  android:textSize="@dimen/sp_15"
+                  android:textColor="@android:color/black"
+                  android:layout_height="wrap_content"/>
+
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_toRightOf="@+id/time_text"
+                  android:layout_marginTop="48dp"
+                  android:drawablePadding="@dimen/dimen_8_dp"
+                  android:drawableStart="@drawable/status_tick"
+                  android:id="@+id/text_status"
+                  android:text="Online"
+                  android:layout_marginLeft="@dimen/dimen_8_dp"
+                  android:textSize="@dimen/sp_15"
+                  android:textColor="@android:color/black"
+                  android:layout_height="wrap_content"/>
+
+        <ImageView android:layout_width="@dimen/dimen_24dp"
+                   android:layout_alignParentEnd="true"
+                   android:src="@drawable/arraow"
+                   android:layout_centerVertical="true"
+                   android:layout_height="@dimen/dimen_24dp"/>
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

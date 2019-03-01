@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                   xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                   android:elevation="@dimen/dimen_5dp"
+                                   android:background="@drawable/curved_rectangle_white"
+                                   android:padding="@dimen/dimen_12_dp"
+                                   android:layout_gravity="bottom"
+                                   android:layout_margin="@dimen/dimen_12_dp"
+                                   android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:layout_width="@dimen/dimen_56_dp"
+                android:layout_height="@dimen/dimen_56_dp" app:srcCompat="@drawable/profile_img"
+                android:id="@+id/imageView4"
+                app:layout_constraintStart_toStartOf="@+id/guideline14" android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="@+id/guideline11"/>
+        <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:id="@+id/guideline11"
+                                                    app:layout_constraintGuide_begin="16dp"
+                                                    android:orientation="horizontal"/>
+        <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:id="@+id/guideline14"
+                                                    app:layout_constraintGuide_begin="16dp"
+                                                    android:orientation="vertical"/>
+        <TextView
+                android:text="Jammel Deere"
+                android:layout_width="0dp"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_18_size"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView11"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="@+id/guideline11"
+                app:layout_constraintStart_toEndOf="@+id/imageView4"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp" app:layout_constraintEnd_toStartOf="@+id/linearLayout"/>
+
+
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:orientation="horizontal" app:layout_constraintEnd_toEndOf="parent"
+                      android:layout_marginEnd="8dp" app:layout_constraintTop_toTopOf="@+id/textView11"
+                      app:layout_constraintBottom_toBottomOf="@+id/textView11" android:id="@+id/linearLayout">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:src="@drawable/star_img"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:src="@drawable/star_img"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:src="@drawable/star_img"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:src="@drawable/star_img"/>
+            <TextView
+                    android:text="4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView8" android:layout_weight="1"
+                    android:layout_marginStart="4dp"/>
+
+        </LinearLayout>
+        <TextView
+                android:text="10:30 AM"
+                android:drawableStart="@drawable/clock"
+                android:drawablePadding="@dimen/dimen_8_dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView12"
+                app:layout_constraintStart_toEndOf="@+id/imageView4"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView11"/>
+        <TextView
+                android:text="Online"
+                android:drawableStart="@drawable/status_tick"
+                android:drawablePadding="@dimen/dimen_8_dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView13"
+                app:layout_constraintStart_toEndOf="@+id/textView12"
+                android:layout_marginStart="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView12"/>
+        <TextView
+                android:text="Hide Details"
+                android:textColor="#1270E8"
+                android:textSize="@dimen/text_14_size"
+                android:layout_width="wrap_content"
+                android:onClick="showDetail"
+                android:layout_height="wrap_content"
+                android:id="@+id/show_details"
+                app:layout_constraintStart_toStartOf="@+id/guideline14"
+                android:layout_marginStart="8dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                app:layout_constraintHorizontal_bias="0.471" android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4"/>
+        <Space
+                android:layout_width="4dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/space2"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/show_details" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/detail_text_view"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="@+id/guideline14"
+                android:layout_marginStart="8dp"/>
+        <include android:layout_width="0dp" android:layout_height="wrap_content"
+                 layout="@layout/detail_show_layout"
+                 android:layout_marginTop="8dp"
+                 app:layout_constraintTop_toBottomOf="@+id/space2"
+                 app:layout_constraintStart_toStartOf="@+id/guideline14"
+                 android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+                 android:layout_marginEnd="8dp"
+                 android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/button"
+                 android:id="@+id/detail_text_view"/>
+        <Button
+                android:text="Ride"
+                android:layout_width="0dp"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:onClick="rideClick"
+                android:background="@drawable/curved_rectangle_theme"
+                android:layout_margin="@dimen/dimen_12_dp"
+                android:layout_height="wrap_content" android:id="@+id/button"
+                app:layout_constraintStart_toStartOf="@+id/guideline14"
+                android:layout_marginStart="8dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                android:layout_marginBottom="16dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

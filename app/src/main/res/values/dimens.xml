@@ -1,0 +1,32 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="spot_size">6dp</dimen>
+    <dimen name="title_margin">10dp</dimen>
+    <dimen name="title_padding">6dp</dimen>
+    <dimen name="progress_margin">24dp</dimen>
+    <dimen name="progress_width">250dp</dimen>
+
+    <dimen name="icon_top_margin">24dp</dimen>
+    <dimen name="icon_bottom_margin">24dp</dimen>
+    <dimen name="title_bottom_margin">16dp</dimen>
+    <dimen name="field_width_standard">150dp</dimen>
+    <dimen name="toolbar_margin_top">36dp</dimen>
+    <dimen name="text_18_size">18sp</dimen>
+    <dimen name="text_24_size">24sp</dimen>
+    <dimen name="text_22_size">22sp</dimen>
+    <dimen name="user_image">65dp</dimen>
+    <dimen name="star_dimen">20dp</dimen>
+    <dimen name="dimen_12_dp">12dp</dimen>
+    <dimen name="text_14_size">14sp</dimen>
+    <dimen name="dimen_8_dp">8dp</dimen>
+    <dimen name="sp_12_text">12sp</dimen>
+    <dimen name="dimen_5dp">5dp</dimen>
+    <dimen name="dimen_24dp">24dp</dimen>
+    <dimen name="dimen_56_dp">56dp</dimen>
+    <dimen name="dimen_36dp">36dp</dimen>
+    <dimen name="sp_15">15sp</dimen>
+    <dimen name="dimen_10dp">10dp</dimen>
+</resources>

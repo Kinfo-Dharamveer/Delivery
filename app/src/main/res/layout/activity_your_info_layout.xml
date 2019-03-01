@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_height="match_parent"
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10"
+            android:background="@drawable/curve_toolbar_bg"
+            android:layout_height="wrap_content">
+
+
+        <include layout="@layout/tool_bar_layout"/>
+        <FrameLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:padding="2dp"
+                android:background="@drawable/circle_background"
+                android:layout_marginTop="24dp">
+
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/profile_pic"
+                    android:onClick="ProfilePicClick"
+                    android:background="@drawable/img"
+                    android:layout_gravity="center"/>
+        </FrameLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_12_dp"
+                android:orientation="vertical"
+                android:weightSum="8.9">
+
+            <EditText
+                    android:id="@+id/edit_text_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/hint_full_name"
+                    android:inputType="text"
+                    android:layout_marginTop="8dp"
+
+                    android:background="@drawable/curved_rectangle_white"
+                    android:singleLine="true"/>
+
+
+            <EditText
+                    android:id="@+id/edit_text_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/hint_email"
+                    android:layout_marginTop="8dp"
+                    android:inputType="textEmailAddress"
+                    android:background="@drawable/curved_rectangle_white"
+                    android:singleLine="true"/>
+
+            <TextView
+                    android:id="@+id/tv_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/hint_phone_number"
+                    android:textSize="18sp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center|start"
+                    android:background="@drawable/curved_rectangle_white"
+                    android:singleLine="true"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:layout_marginTop="8dp"
+                          android:layout_height="50dp">
+                <EditText
+                        android:id="@+id/edit_text_zip_code"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:maxLength="8"
+                        android:layout_height="match_parent"
+                        android:hint="@string/zip_code"
+                        android:inputType="number"
+                        android:background="@drawable/curved_rectangle_white"
+                        android:singleLine="true"/>
+
+                <Button android:layout_width="wrap_content"
+                        android:text="Verify"
+                        android:id="@+id/btn_verify"
+                        android:onClick="verifyZipCode"
+                        android:textColor="@android:color/white"
+                        android:layout_marginLeft="@dimen/dimen_12_dp"
+                        android:layout_marginRight="@dimen/dimen_12_dp"
+                        android:background="@drawable/curved_rectangle_theme"
+                        android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+            <EditText
+                    android:id="@+id/edit_text_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/hint_address"
+                    android:layout_marginTop="8dp"
+
+                    android:inputType="text" android:background="@drawable/curved_rectangle_white"
+                    android:singleLine="true"/>
+
+
+            <TextView
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:hint="State"
+                    android:gravity="center|start"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/text_select_State"
+                    android:background="@drawable/curved_rectangle_white"
+                    android:layout_width="match_parent"/>
+
+            <TextView
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:hint="City"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:gravity="center|start"
+                    android:id="@+id/text_select_City"
+                    android:background="@drawable/curved_rectangle_white"
+                    android:layout_width="match_parent"/>
+            <TextView
+                    android:id="@+id/edit_dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center|start"
+                    android:textSize="18sp"
+                    android:hint="@string/dob"
+                    android:drawableEnd="@drawable/calendar_range"
+                    android:layout_marginTop="8dp"
+                    android:inputType="text"
+                    android:background="@drawable/curved_rectangle_white"
+                    android:singleLine="true"/>
+
+            <EditText
+                    android:id="@+id/edit_social_security"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/hint_security_number"
+                    android:layout_marginTop="8dp"
+                    android:inputType="text" android:background="@drawable/curved_rectangle_white"
+                    android:singleLine="true"/>
+
+            <EditText
+                    android:id="@+id/edit_licence_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/hint_driver_licence_number"
+                    android:layout_marginTop="8dp"
+                    android:inputType="text" android:background="@drawable/curved_rectangle_white"
+                    android:singleLine="true"/>
+
+            <EditText
+                    android:id="@+id/edit_text_SetPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/set_password"
+                    android:layout_marginTop="8dp"
+                    android:inputType="textPassword"
+                    android:background="@drawable/curved_rectangle_white"
+                    android:singleLine="true"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    app:hintEnabled="false"
+                    app:passwordToggleEnabled="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_height="50dp">
+
+                <EditText
+                        android:id="@+id/edit_text_ConfirmPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="@string/confirm_password"
+                        android:background="@drawable/curved_rectangle_white"
+                        android:inputType="textPassword"
+                        android:singleLine="true"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button android:id="@+id/continueBt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textAllCaps="false"
+                    android:layout_margin="16dp"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="@dimen/dimen_12_dp"
+                    android:onClick="continueClick"
+                    android:textColor="@android:color/white"
+                    android:text="@string/btn_continue"
+                    android:background="@drawable/curved_rectangle_theme"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_gravity="bottom"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="6dp">
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/curved_rectangle_white"
+            android:padding="@dimen/dimen_8_dp"
+            android:orientation="horizontal">
+        <ImageView android:layout_width="@dimen/user_image"
+                   android:src="@drawable/img"
+                   android:id="@+id/user_image"
+                   android:layout_height="@dimen/user_image"/>
+
+        <ImageView android:layout_width="@dimen/star_dimen"
+                   android:src="@drawable/star"
+                   android:id="@+id/star_image"
+                   android:layout_marginBottom="@dimen/dimen_12_dp"
+                   android:layout_alignParentBottom="true"
+                   android:layout_alignBottom="@+id/user_image"
+                   android:layout_marginLeft="@dimen/dimen_12_dp"
+                   android:layout_height="@dimen/star_dimen"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_alignBottom="@+id/user_image"
+                  android:layout_toRightOf="@+id/star_image"
+                  android:layout_alignParentBottom="true"
+                  android:layout_marginBottom="@dimen/dimen_12_dp"
+                  android:text="4" android:layout_height="wrap_content"/>
+        <TextView android:layout_width="wrap_content"
+                  android:text="jamal Doeree"
+                  android:id="@+id/user_name"
+
+                  android:layout_toRightOf="@+id/user_image"
+                  android:layout_marginLeft="@dimen/dimen_12_dp"
+                  android:textSize="@dimen/text_18_size"
+                  android:textColor="@android:color/black"
+                  android:layout_height="wrap_content"/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_toRightOf="@+id/user_image"
+                  android:layout_marginTop="@dimen/text_24_size"
+                  android:padding="@dimen/dimen_5dp"
+                  android:id="@+id/address_text"
+                  android:drawableLeft="@android:drawable/ic_lock_idle_alarm"
+                  android:text="sector 32 A chandigerh chandigarh"
+                  android:layout_marginLeft="@dimen/dimen_12_dp"
+                  android:textSize="@dimen/sp_12_text"
+                  android:textColor="@android:color/black"
+                  android:layout_height="wrap_content"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_toRightOf="@+id/user_image"
+                  android:layout_marginTop="48dp"
+                  android:id="@+id/time_text"
+                  android:padding="@dimen/dimen_5dp"
+                  android:drawableLeft="@android:drawable/ic_lock_idle_alarm"
+                  android:text="10 :30 PM"
+                  android:layout_marginLeft="@dimen/dimen_12_dp"
+                  android:textSize="@dimen/sp_12_text"
+                  android:textColor="@android:color/black"
+                  android:layout_height="wrap_content"/>
+
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_toRightOf="@+id/time_text"
+                  android:layout_marginTop="48dp"
+                  android:padding="@dimen/dimen_5dp"
+                  android:drawableLeft="@android:drawable/ic_lock_idle_alarm"
+                  android:text="online"
+
+                  android:layout_marginLeft="@dimen/dimen_8_dp"
+
+                  android:textSize="@dimen/sp_12_text"
+                  android:textColor="@android:color/black"
+                  android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

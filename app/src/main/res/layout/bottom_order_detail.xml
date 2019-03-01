@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:elevation="@dimen/dimen_8_dp"
+        android:background="@drawable/curved_rectangle_white"
+        android:layout_gravity="bottom"
+        app:cardCornerRadius="6dp"
+>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+            <ImageView android:layout_width="@dimen/user_image"
+                       android:src="@drawable/profile_img"
+                       android:id="@+id/user_image"
+                       android:layout_marginTop="@dimen/dimen_12_dp"
+                       android:layout_height="@dimen/user_image"/>
+            <ImageView android:layout_width="@dimen/star_dimen"
+                       android:src="@drawable/star"
+                       android:id="@+id/star_image"
+                       android:drawablePadding="10dp"
+                       android:layout_alignParentBottom="true"
+                       android:layout_alignBottom="@+id/user_image"
+                       android:layout_marginLeft="@dimen/dimen_12_dp"
+                       android:layout_height="@dimen/star_dimen"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_alignBottom="@+id/user_image"
+                      android:layout_toRightOf="@+id/star_image"
+                      android:layout_alignParentBottom="true"
+                      android:text="4" android:layout_height="wrap_content"/>
+            <TextView android:layout_width="wrap_content"
+                      android:text="jamal Doeree"
+                      android:id="@+id/user_name"
+                      android:layout_marginBottom="@dimen/dimen_12_dp"
+                      android:layout_marginTop="@dimen/dimen_12_dp"
+                      android:drawablePadding="10dp"
+                      android:layout_toRightOf="@+id/user_image"
+                      android:layout_marginLeft="@dimen/dimen_12_dp"
+                      android:textSize="@dimen/text_18_size"
+                      android:textColor="@android:color/black"
+                      android:layout_height="wrap_content"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_toRightOf="@+id/user_image"
+                      android:layout_marginTop="@dimen/dimen_36dp"
+                      android:layout_marginBottom="@dimen/dimen_12_dp"
+                      android:drawablePadding="10dp"
+                      android:id="@+id/address_text"
+                      android:drawableLeft="@drawable/location_pin_small"
+                      android:text="sector 32 A chandigerh chandigarh"
+                      android:layout_marginLeft="@dimen/dimen_12_dp"
+                      android:textSize="@dimen/sp_12_text"
+                      android:textColor="@android:color/black"
+                      android:layout_height="wrap_content"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_toRightOf="@+id/user_image"
+                      android:layout_marginTop="56dp"
+                      android:drawablePadding="10dp"
+                      android:id="@+id/time_text"
+                      android:layout_marginBottom="@dimen/dimen_12_dp"
+
+                      android:drawableLeft="@drawable/clock"
+                      android:text="10 :30 PM"
+                      android:layout_marginLeft="@dimen/dimen_12_dp"
+                      android:textSize="@dimen/sp_12_text"
+                      android:textColor="@android:color/black"
+                      android:layout_height="wrap_content"/>
+
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_toRightOf="@+id/time_text"
+                      android:layout_marginTop="56dp"
+                      android:drawablePadding="10dp"
+                      android:drawableLeft="@drawable/status_tick"
+                      android:text="online"
+                      android:layout_marginLeft="@dimen/dimen_8_dp"
+                      android:textSize="@dimen/sp_12_text"
+                      android:textColor="@android:color/black"
+                      android:layout_height="wrap_content"/>
+
+
+        </RelativeLayout>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:onClick="showDetail"
+                  android:textSize="@dimen/text_18_size"
+                  android:textColor="@color/colorPrimary"
+                  android:text="show detail"/>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="vertical"
+                      android:visibility="gone"
+                      android:id="@+id/include_detail_text"
+                      android:layout_height="match_parent">
+            <include layout="@layout/detail_show_layout"
+
+            />
+        </LinearLayout>
+        <Button android:layout_width="match_parent"
+                android:text="Ride"
+                android:layout_margin="@dimen/dimen_24dp"
+                android:onClick="rideClick"
+                android:textColor="@android:color/white"
+                android:background="@drawable/curved_rectangle_theme"
+                android:layout_marginTop="@dimen/dimen_12_dp"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_height="match_parent"
+            android:id="@+id/main_layout"
+            android:layout_width="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:app="http://schemas.android.com/apk/res-auto"
+                  android:layout_width="match_parent"
+                  android:orientation="vertical"
+                  android:weightSum="10"
+                  android:id="@+id/root_main"
+                  android:background="@drawable/curve_toolbar_bg"
+                  android:layout_height="wrap_content">
+
+        <include layout="@layout/tool_bar_layout"/>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="120dp"
+                      android:gravity="center"
+                      android:layout_marginTop="24dp"
+                      android:weightSum="2">
+
+            <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/curved_rectangle_transparent"
+                    android:padding="8dp">
+
+                <ImageView
+                        android:id="@+id/image_fromPhoto"
+                        android:layout_width="wrap_content"
+                        android:background="@android:color/white"
+                        android:layout_gravity="center"
+                        android:src="@drawable/car_front_img"
+                        android:onClick="FrontPhotoPic"
+                        android:scaleType="centerCrop"
+                        android:layout_height="wrap_content"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/curved_rectangle_transparent"
+                    android:padding="8dp">
+
+                <ImageView
+                        android:id="@+id/image_backPhoto"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@android:color/white"
+                        android:src="@drawable/car_back_img"
+                        android:onClick="BackPhotoPic"
+                        android:scaleType="centerCrop"
+                        android:layout_height="wrap_content"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:layout_margin="16dp"
+                      android:weightSum="10">
+
+            <Spinner
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/spinner_VehicleType"
+                    android:background="@drawable/spinner_curved_rectangle_white"
+                    android:layout_width="match_parent"/>
+
+            <EditText
+                    android:id="@+id/edit_text_vehiclePlateNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/str_vehiclePlateNo"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:inputType="text" android:background="@drawable/curved_rectangle_white"
+                    android:singleLine="true"/>
+
+            <EditText
+                    android:id="@+id/edit_text_vehicle_LicenceNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/str_vehicleLiceneceNo"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:inputType="text" android:background="@drawable/curved_rectangle_white"
+                    android:singleLine="true"/>
+
+            <Spinner
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:id="@+id/spinner_select_vehicle_Brand"
+                    android:background="@drawable/spinner_curved_rectangle_white"
+                    android:layout_width="match_parent"/>
+
+
+            <Spinner
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:id="@+id/spinner_vehicle_year"
+                    android:background="@drawable/spinner_curved_rectangle_white"
+                    android:layout_width="match_parent"/>
+            <Spinner
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:id="@+id/spinner_vehicle_color"
+                    android:background="@drawable/spinner_curved_rectangle_white"
+                    android:layout_width="match_parent"/>
+
+            <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:layout_margin="16dp"
+                    android:onClick="continueVechiclRegisteration"
+                    android:textColor="@android:color/white"
+                    android:text="@string/btn_continue"
+                    android:background="@drawable/curved_rectangle_theme"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

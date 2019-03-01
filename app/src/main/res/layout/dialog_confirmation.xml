@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_24dp"
+        android:background="@drawable/curved_rectangle_white"
+        android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/linear_layout"
+            android:gravity="center">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:text="@string/are_you_ready"
+                android:textSize="24sp"
+                android:textColor="#153A4D"/>
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/grey_300"
+            android:id="@+id/view"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+        <Button
+                android:layout_weight=".5"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:background="@android:color/white"
+                android:text="@string/cancel"
+                android:id="@+id/cencel_btn"
+                android:textColor="@color/grey_500"
+                android:textAllCaps="false"
+                android:textSize="16sp"/>
+
+        <View
+                android:layout_width="2dp"
+                android:layout_height="50dp"
+                android:background="@color/grey_300"/>
+
+        <Button
+                android:layout_weight=".5"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:background="@android:color/white"
+                android:text="@string/yes"
+                android:id="@+id/yes_btn"
+                android:textColor="@color/colorAccent"
+                android:textAllCaps="false"
+                android:textSize="16sp"/>
+    </LinearLayout>
+
+</LinearLayout>

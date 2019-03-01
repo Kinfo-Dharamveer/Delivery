@@ -1,0 +1,90 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SpotsDialogDefault" parent="android:Theme.DeviceDefault.Light.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="DialogTitleText">Loading…</item>
+        <item name="DialogSpotCount">5</item>
+    </style>
+
+    <!-- Activity with no Title -->
+    <style name="ThemeOverlay.MyNoTitleActivity" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- Dark Buttons -->
+    <style name="ThemeOverlay.MyDarkButton" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="colorButtonNormal">@color/grey_500</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!-- Light EditTexts -->
+    <style name="ThemeOverlay.MyLightEditText" parent="ThemeOverlay.AppCompat.Dark"/>
+
+    <style name="ThemeOverlay.MyTextDetail" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fadeScrollbars">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">5</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="ThemeOverlay.FirebaseIcon" parent="AppTheme">
+        <item name="android:layout_marginTop">@dimen/icon_top_margin</item>
+        <item name="android:layout_marginBottom">@dimen/icon_bottom_margin</item>
+    </style>
+
+    <style name="ThemeOverlay.MyTitleText" parent="AppTheme">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">36sp</item>
+    </style>
+    <style name="HeaderBar">
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+    <style name="ActionBarThemeOverlay" parent="">
+        <item name="android:textColorPrimary">#fff</item>
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlHighlight">@android:color/darker_gray</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="ActionBarPopupThemeOverlay" parent="ThemeOverlay.AppCompat.Light" >
+        <item name="android:background">@android:color/black</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="AppThemeRatingBar" parent="Theme.AppCompat">
+        <item name="ratingBarStyle">@style/MyRatingBar</item>
+    </style>
+        <style name="MyRatingBar" parent="@android:style/Widget.RatingBar">
+            <item name="android:progressDrawable">@drawable/star</item>
+            <item name="android:minHeight">23dip</item>
+            <item name="android:maxHeight">25dip</item>
+        </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="MyStyle" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/tab_indicator</item>
+        <item name="tabIndicatorHeight">6dp</item>
+        <item name="tabPaddingStart">16dp</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="tabPaddingEnd">16dp</item>
+    </style>
+    <color name="tab_indicator">#2A4855</color>
+</resources>

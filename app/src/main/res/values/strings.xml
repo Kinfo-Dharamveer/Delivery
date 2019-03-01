@@ -1,0 +1,209 @@
+<resources>
+    <string name="app_name">Joint Delivery</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="email_text">Email</string>
+    <string name="password_text">Password</string>
+    <string name="login_text">Login</string>
+    <string name="new_account_create_text">Forgot Password</string>
+    <string name="forget_password">Forget Password ?</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+
+    <string name="label_google_sign_in">Firebase + Google Sign In</string>
+    <string name="desc_google_sign_in">Use a Google Sign In credential to authenticate with Firebase.</string>
+    <string name="label_emailpassword">Email/Password Authentication</string>
+    <string name="desc_emailpassword">Use an email and password to authenticate with Firebase.</string>
+    <string name="label_phone_auth">Phone Number Authentication</string>
+    <string name="desc_phone_auth">Use a phone number to authenticate with Firebase.</string>
+    <string name="hint_user_id">User ID</string>
+    <string name="get_custom_token">Get Token</string>
+    <string name="sign_in">Sign In</string>
+    <string name="create_account">Create Account</string>
+    <string name="send_link">Send Link</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="verify_email">Verify Email</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="loading">Loading…</string>
+    <string name="custom_token">Custom Token</string>
+    <string name="signed_in">Signed In</string>
+    <string name="signed_out">Signed Out</string>
+    <string name="token_null">Token: null</string>
+    <string name="desc_firebase_lockup">Firebase logo and name</string>
+    <string name="auth_failed">Authentication failed</string>
+    <string name="start_phone_auth">Start</string>
+    <string name="verify_phone_auth">Verify</string>
+    <string name="resend_phone_auth">Resend</string>
+    <string name="hint_phone_number">Phone Number</string>
+    <string name="hint_verification_code">Verification Code</string>
+    <string name="status_code_sent">Code Sent</string>
+    <string name="status_verification_failed">Verification failed</string>
+    <string name="status_verification_succeeded">Verification succeeded</string>
+    <string name="status_sign_in_failed">Sign-in failed</string>
+    <string name="instant_validation">(instant validation)</string>
+    <string name="google_status_fmt">Google User: %s</string>
+    <string name="google_title_text">Google Sign In</string>
+    <string name="emailpassword_status_fmt">Email User: %1$s (verified: %2$b)</string>
+    <string name="emailpassword_title_text">Email and Password</string>
+    <string name="phone_title_text">Phone Number</string>
+    <string name="firebaseui_status_fmt">Firebase User: %s</string>
+    <string name="firebaseui_title_text">FirebaseUI Auth</string>
+    <string name="id_fmt">User ID: %s</string>
+    <string name="email_fmt">Email: %s</string>
+
+    <string name="firebase_status_fmt">Firebase User: %s</string>
+    <string name="firebase_user_management">Firebase User Management</string>
+    <string name="welcome">Welcome !!</string>
+    <string name="email_phone_hint">Phone Number</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="login">Login</string>
+    <string name="dont_have_account">Don\'t have account ?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="dummy_text">This information does not match with our record please try again</string>
+    <string name="ok">Ok</string>
+    <string name="are_you_ready">Are you ready to drive?</string>
+    <string name="cancel">Cancel</string>
+    <string name="yes">Yes</string>
+    <string name="hint_full_name">Full Name</string>
+    <string name="hint_address">Address</string>
+    <string name="set_password">Set Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="btn_continue">Continue</string>
+    <string name="str_vehiclePlateNo">Vehicle Plate Number</string>
+    <string name="str_vehicleLiceneceNo">Vehicle Registration Number</string>
+    <string name="hint_driver_name">Driver Name</string>
+    <string name="dob">Date Of Birth</string>
+    <string name="hint_driver_state">Driver\'s License State</string>
+    <string name="backgrount_rightact_heading">Your Rights Under the fair \n Credit Reporting Act</string>
+    <string name="backgrount_disclosure">Disclosure regarding \n background investigation</string>
+    <string name="dummy_text_view">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+        Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley
+        of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+        leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+        release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+        like Aldus PageMaker including versions of Lorem Ipsum
+    </string>
+    <string name="dummy_acknoledge">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+        Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley
+        of type and scrambled it to make a type specimen book.
+    </string>
+    <string name="home">Home</string>
+    <string name="assigned">Assigned</string>
+    <string name="completed">Completed</string>
+    <string name="messages">Messages</string>
+    <string name="profile">Profile</string>
+    <string name="upload">Upload Car/Bike Photo</string>
+    <string name="vehicleType">Vehicle Type</string>
+    <string name="vehicle_no">Vehicle Number</string>
+    <string name="str_vehicle_Licence">Vehicle Registration Number</string>
+    <string name="vehicle_brand">Vehicle Brand</string>
+    <string name="vehicle_making_year">Vehicle Making Year</string>
+    <string name="vehicle_color">Vehicle Color</string>
+    <string name="notification">Notification</string>
+    <string name="termaandconditions">Terms And Conditions</string>
+    <string name="profile_edit">Profile Edit</string>
+    <string name="vehicle_info">Vehicle Info</string>
+    <string name="home_title">Your Routes</string>
+    <string name="assigned_title">Assigned Order</string>
+    <string name="complteted_title">Completed Order</string>
+
+    <string-array name="spinner_states_array">
+        <item>State</item>
+        <item>Punjab</item>
+        <item>Gurdaspur</item>
+        <item>Pathankot</item>
+        <item>Jammu</item>
+        <item>Kamshmir</item>
+        <item>U.P.</item>
+        <item>Bihar</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+    <string name="user_name">Conner Pennington</string>
+    <string name="useremail">conner_pennington@gmail.com</string>
+    <string name="phone_no">+232323223</string>
+    <string name="user_address">#343 Oukwood</string>
+    <string name="hint_state">State</string>
+    <string name="hint_city">City</string>
+    <string name="user_city">Irvine</string>
+    <string name="hint_save">Save</string>
+    <string name="vehicle_front_photo">Vehicle Front Photo</string>
+    <string name="choose">Choose</string>
+    <string name="vehicle_back_photo">Vehicle back Photo</string>
+    <string name="hint_join_now">Join Now</string>
+    <string name="already_have_login">Already have an account?</string>
+    <string name="something_wrong">Something went wrong, please try later</string>
+    <string name="please_enter_phone">Please enter phone number</string>
+    <string name="please_connect_internet">Your internet is not working, Please check internet connection</string>
+    <string name="please_enterth_otp">Please Enter the otp \nSent to phone no:</string>
+    <string name="submit">Submit</string>
+    <string name="please_enter_name">Please enter full name</string>
+    <string name="please_enter_email">Please enter email address\'</string>
+    <string name="please_enter_password">Please enter set password</string>
+    <string name="please_enter_confirm_password">Please enter confirm password</string>
+    <string name="please_selete_state">Please select state</string>
+    <string name="please_selete_city">Please select city</string>
+    <string name="please_enter_plate_no">Please enter vehicle plate number</string>
+    <string name="please_enter_licenece_no">Please enter vehicle licence no</string>
+    <string name="please_enter_vehicle_type">Please enter vehicle type.</string>
+    <string name="please_enter_vehicle_brand">Please select vehicle brand name</string>
+    <string name="please_enter_vehicle_color">Please select vehicle color</string>
+    <string name="please_enter_vehicle_making_year">Please select vehicle making year</string>
+    <string name="btn_startregisteration">Start Background Check Process</string>
+    <string name="please_enter_dob">Please enter date of birth</string>
+    <string name="hint_security_number">Social Security Number</string>
+    <string name="please_enter_edt_security_number">Please enter social security number</string>
+    <string name="activation_code">Activation Code</string>
+    <string name="you_made_it">You Made It !!</string>
+    <string name="screening_process_done">Your Screening process has been successfully completed now you can enjoy the
+        drive
+    </string>
+    <string name="please_enter_email_phone">Please enter email</string>
+    <string name="back_to_login">Back to Login</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="forgot_text">Enter the email address you use for Joint Delivery and we will help you create a new
+        password.
+    </string>
+    <string name="enter_otp">Enter Otp</string>
+    <string name="new_password">New Password</string>
+    <string name="your_info_heading">Your Info</string>
+    <string name="vehicle_detail">Vehicle Details</string>
+    <string name="driver_info">Driver Info</string>
+    <string name="title_background_process">Background Process</string>
+    <string name="hint_driver_licence_number">Driver Licence Number</string>
+    <string name="contact_customer">Contact Customer</string>
+    <string name="send_message">Send Message</string>
+    <string name="btn_contact_customer">Contact Customer</string>
+    <string name="btn_send_message">Send a Message</string>
+    <string name="upload_from">Upload Photo From</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="please_upload_profilePic">Please upload profile picture</string>
+    <string name="please_upload_front_pic">Please upload vehicle front picture</string>
+    <string name="please_upload_back_pic">Please upload vehicle back picture</string>
+    <string name="please_enter_address">Please enter address</string>
+    <string name="zip_code">Zip Code</string>
+    <string name="please_add_zip_code">Please enter zip code</string>
+    <string name="please_enter_mobile">Please enter mobile number</string>
+    <string name="please_enter_valid_zipcode">Please enter valid zipcode to fetch city</string>
+    <string name="please_selete_valid_zipcode_state">Please select valid zipcode to fetch state</string>
+    <string name="please_enter_social_security">Please enter social security number</string>
+    <string name="please_enter_license_number">Please enter license number</string>
+    <string name="please_enter_valid_password">Password should contain minimum eight characters, at least one uppercase
+        letter, one lowercase letter, one number and one special character.
+    </string>
+    <string name="your_routes">Your Routes</string>
+    <string name="order_detail">Order Detail</string>
+
+
+</resources>
